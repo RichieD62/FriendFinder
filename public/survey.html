@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Survey</title>
+
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+       crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+       crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <h2>Friend Finder Survey</h2>
+            </div>
+        </div>
+
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Name (Required)</label>
+                <input type="name" class="form-control" id="formName" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+                <label for="exampleInputPassword1">Link to Photo/Image of you</label>
+                <input type="profPic" class="form-control" id="profPic" placeholder="Paste a link to a picture of yourself here">
+            </div>
+            
+            <hr>
+
+            <h2>Please answer all questions on a scale of 1 to 5 (where 1 is Completely Disagree and 5 is Completely Agree)</h2>
+
+            <!-- Question 1 -->
+            <h3><strong>Question 1</strong></h3>
+            <h4>I like to meet new people</h4>
+                  <select class="chosen-select" id="q1">
+                      <option value="">** Select an option</option>
+                      <option value="1">1 (Strongly Disagree)</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                
+            
+              <br>
+
+              <!-- Question 2 -->
+            <h3><strong>Question 2</strong></h3>
+            <h4>I prefer to be engrossed in detail rather than to get a brief overview</h4>
+            <select class="chosen-select" id="q2">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+
+              <br>
+
+              <!-- Question 3 -->
+            <h3><strong>Question 3</strong></h3>
+            <h4>Others would describe me as a confident person</h4>
+            <select class="chosen-select" id="q3">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 4 -->
+            <h3><strong>Question 4</strong></h3>
+            <h4>I am an outgoing person</h4>
+            <select class="chosen-select" id="q4">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 5 -->
+            <h3><strong>Question 5</strong></h3>
+            <h4>I put my needs before the needs of others</h4>
+            <select class="chosen-select" id="q5">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 6 -->
+            <h3><strong>Question 6</strong></h3>
+            <h4>I am never unhappy</h4>
+            <select class="chosen-select" id="q6">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 7 -->
+            <h3><strong>Question 7</strong></h3>
+            <h4>I let things get into a mess before I fix them</h4>
+            <select class="chosen-select" id="q7">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 8 -->
+            <h3><strong>Question 8</strong></h3>
+            <h4>I enjoy planning parties and social events</h4>
+            <select class="chosen-select" id="q8">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 9 -->
+            <h3><strong>Question 9</strong></h3>
+            <h4>I am more comfortable going out on the weekends rather than staying in</h4>
+            <select class="chosen-select" id="q9">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+
+              <!-- Question 10 -->
+            <h3><strong>Question 10</strong></h3>
+            <h4>I find myself filling my spare time with activities rather than down time</h4>
+            <select class="chosen-select" id="q10">
+                <option value="">** Select an option</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              <br>
+              <br>
+
+            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <br>
+
+
+
+    <footer class = "footer">
+        <div class = "container">
+            <p>
+            <a href = "/api/friends">API Friend List</a>  |  <a href = "api/gitHub">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
+
+
+    <script type="text/javascript">
+      console.log("Hello World")
+      $("#submitBtn").on("click", function(event) {
+      event.preventDefault();
+
+      var matchStatus = $('.modal-title');
+      var modalBody = $('.modal-body');
+      // set responses to local variables
+      var name = $("#formName").val().trim();
+      var photo = $("#profPic").val();
+      var item1 = parseInt($('#q1').val());
+      var item2 = parseInt($('#q2').val());
+      var item3 = parseInt($('#q3').val());
+      var item4 = parseInt($('#q4').val());
+      var item5 = parseInt($('#q5').val());
+      var item6 = parseInt($('#q6').val());
+      var item7 = parseInt($('#q7').val());
+      var item8 = parseInt($('#q8').val());
+      var item9 = parseInt($('#q9').val());
+      var item10 = parseInt($('#q10').val())
+      
+      var newObj = {
+          name: $("#formName").val().trim(),
+          photo: $("#profPic").val().trim(),
+          scores: [
+              item1,
+              item2,
+              item3,
+              item4,
+              item5,
+              item6,
+              item7,
+              item8,
+              item9,
+              item10,
+          ]
+      }
+    
+      console.log(newObj);
+
+      var currentURL = window.location.origin;
+    
+      $.post(currentURL + "/api/friends", newObj, function(res){
+          console.log(res);
+          
+      })
+
+      
+    }); //Look at the GitLab to find some examples hopefully
+ 
+    </script>
+
+</body>
+</html>

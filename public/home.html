@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Home</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+       crossorigin="anonymous">
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+       crossorigin="anonymous"></script>
+    <script src="../routing/htmlRoutes.js"></script>
+    <script src="../server.js"></script>
+
+
+</head>
+
+<body>
+    <div class = "container">
+        <div class = "row">
+            <div class = "col-md-12">
+                <div class="jumbotron">
+                    <div class = "text-center">
+                            <h1 class="display-4"><span class="glyphicon glyphicon-user"></span> Friend Finder</h1>
+                    </div>
+                    <hr class="my-4">
+                    <div class = "text-center" id="message">
+                    <p class="text-center">Answer a few basic questions.</p>
+                    <p class="text-center">Then find the friend with the greatest compatibility!</p>    
+                    <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><span class = "glyphicon glyphicon-list-alt"></span> Survey</button></a>
+                    </div>
+                </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <footer class = "footer">
+        <div class = "container">
+            <p>
+            <a href = "/api/friends">API Friend List</a>  |  <a href = "api/gitHub">GitHub Repo</a>
+            </p>
+        </div>
+    </footer>
+ 
+    <script src="https://code.jquery.com/jquery.js"></script>
+
+</body>
+</html>
