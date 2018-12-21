@@ -1,4 +1,3 @@
-//module.export and import friends.js into apiRoutes
 
 var friends = [ 
     {

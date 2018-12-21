@@ -1,1 +1,7 @@
-# FriendFinder
+# Friend Finder
+
+Friend Finder is an application that allows the user to take a quiz that assesses his or her personality. Based on the scores that the user provides, the program will generate the name and picture of a person who has a similar personality. Once the program offers up a friend suggestion, it saves the name, profile picture, and answers to the survey question and allows that user generated "friend" to then be suggested in future surveys. 
+
+This application utilizes Express.js and Node.js as well as some HTML and JavaScript. To use the application, the user will have to install Node.js (if that is not already installed), and then using his/her terminal, navigate to the folder where the server.js file is located. Once there, the user can type in **node server.js**.
+
+The biggest challenge that I experienced with this application was developing the logic/code to have the application compare the user generated scores against the array of already existing "friends" scores. I was able to overcome this challenge by gaining a deeper understanding of the concept of servers by speaking with resources such as TAs and tutors. Once I had a better handle on the concept, I was able to talk through the logic and subsequently, create the code.
