@@ -6,13 +6,15 @@
 
   <title>Survey</title>
 
-
   <script src="https://code.jquery.com/jquery.js"></script>
-
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
        crossorigin="anonymous">
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
        crossorigin="anonymous"></script>
+
+
+    <!-- <script src="../routing/apiRoutes.js"></script>
+    <script src="../server.js"></script> -->
 
 </head>
 
@@ -178,7 +180,32 @@
               <br>
               <br>
 
-            <button type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+            <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="submitBtn">Submit</button>
+              
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title">Your Best Friend</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+
+                      <h2 id="matchName"></h2>
+                      <br>
+                      <div class="text-center">
+                      <img id="matchPhoto" src="" alt="" height="350" width = "350">
+                    </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </form>
     </div>
 
@@ -189,7 +216,7 @@
     <footer class = "footer">
         <div class = "container">
             <p>
-            <a href = "/api/friends">API Friend List</a>  |  <a href = "api/gitHub">GitHub Repo</a>
+            <a href = "/api/friends">API Friend List</a>  |  <a href = "https://github.com/RichieD62/FriendFinder">GitHub Repo</a>
             </p>
         </div>
     </footer>
@@ -239,6 +266,10 @@
     
       $.post(currentURL + "/api/friends", newObj, function(res){
           console.log(res);
+
+        $("#matchName").html(res.name);
+        // var bfImage = $("<img>").attr("src", res.photo);
+        $("#matchPhoto").attr("src",res.photo);
           
       })
 
@@ -246,6 +277,7 @@
     }); //Look at the GitLab to find some examples hopefully
  
     </script>
+
 
 </body>
 </html>
